@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="whatsfordinner.css"/>
+<title>What's for dinner?</title>
+    </head>
+    <body>
+<h1>What should I eat tonight?</h1>
+<p>Select from the options to generate tonights meal.</p>
+
+<label>
+    <input type="checkbox" id="healthyBox">
+    Healthy
+</label>
+
+<label>
+    <input type="checkbox" id="quickBox">
+    Quick
+</label>
+
+<br>
+<br>
+
+<button id="dinnerButton">Generate my dinner</button>
+
+<hr>
+
+<div id="results">
+    <h2>Dinner Ideas</h2>
+    <p id="dinnerPlaceholder">Your dinner ideas will appear here</p>
+    <ul id="mealList"></ul>
+</div>
+
+<script src="whatsfordinner.js"></script>
+
+    </body>
+</html>
