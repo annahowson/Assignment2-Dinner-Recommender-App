@@ -13,6 +13,7 @@ const unhealthySlow = ["Lasagne", "Curry", "Fried Chicken Burger"];
 
 //------USER INPUT------
 // Get information from HTML document
+
 const mealList = document.getElementById("mealList");
 const healthyBox = document.getElementById("healthyBox");
 const quickBox = document.getElementById("quickBox");
@@ -56,7 +57,7 @@ function recommendDinner (){
         results.style.backgroundColor = "red";
     }
 
-console.log("Selected Meal Variable", selectedMeal);
+console.log("Selected Meal Variable", selectedMeals);
 
 //change placeholder text on page
 dinnerPlaceholder.textContent = "Here are your dinner ideas:";
@@ -66,9 +67,9 @@ dinnerPlaceholder.textContent = "Here are your dinner ideas:";
 mealList.innerHTML = "";
 
 //loop for meal options
-for (let i=0; i < selectedMeal.length; i++){
+for (let i=0; i < selectedMeals.length; i++){
     const listItem = document.createElement("li");
-    listItem.textContent = selectedMeal[i];
+    listItem.textContent = selectedMeals[i];
     mealList.appendChild(listItem);
 }
 
